@@ -1,0 +1,10 @@
+@use '../custom' as *;
+
+body{
+    font-size: 14px;
+    font-family: Inter ;
+}
+
+.fw-bold{
+    font-weight: 600 !important;
+}

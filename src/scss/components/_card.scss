@@ -1,0 +1,40 @@
+@use './colors' as *;
+@use '../custom' as *;
+
+
+
+.card{
+    border:0;
+    margin: 2px;
+    min-width: 160px;
+    width: 20%;
+    max-height: 200px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    &-image{
+        max-height: 20px;
+    }
+    p{
+        margin: 0px;
+    }
+    &:hover{
+        background-color: $card-bg-dark-hover;
+    }
+    &-color{
+        color: $text-color-dark;
+    }
+   .letter-spacing {
+        letter-spacing: 4px;
+      }
+    &-border-color{
+        &-fb{border-color: $facebook !important;}
+        //FIXME: linear gradient
+        &-insta{border: linear-gradient(to left, $instagram-from, $instagram-to) !important;}
+        &-twit{border-color: $twitter !important;}
+        &-youtube{border-color: $youTube !important;}
+        
+    }
+    &-border{
+        border-top: solid 4px;
+    }
+    
+}

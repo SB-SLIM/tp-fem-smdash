@@ -1,0 +1,30 @@
+@use '../custom' as *;
+@use '../components/colors' as *;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    hr{
+        display: none;
+    }
+    h5{
+        color: $text-color-dark;
+    }
+        @include media-breakpoint-down(md){
+            flex-direction: column;
+            
+            h1{
+                font-size: small;
+                align-self: flex-start;
+            }
+            h5{
+                font-size: small;
+            }
+            hr{
+                display: block;
+                background-color: $secondary;
+            }
+        }
+        
+}

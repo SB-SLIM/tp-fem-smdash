@@ -1,0 +1,45 @@
+@use './components/colors' as *;
+$primary:       $limegreen; 
+$secondary:     $brightred;
+
+
+/** Dark Theme*/
+
+
+
+
+$border-radius:               .8rem;
+$card-border-color: $facebook;
+
+
+@media (prefers-color-scheme: light) {
+    body{
+        background: $body-bg-light !important;
+        color:    $text-color-light !important;
+    }
+   .card{
+        background: card-bg-light !important;
+   }
+   .card:hover{
+    background: $card-bg-light-hover !important;
+   }
+    
+}
+@media (prefers-color-scheme: dark) {
+    body{
+        background: $body-bg-dark !important;
+        color:    $body-color-dark !important;
+    }
+   .card{
+        background: $card-bg-dark !important;
+   }
+   .card:hover{
+    background: $card-bg-dark-hover !important;
+   }
+}
+
+
+
+
+
+@import  '../../node_modules/bootstrap/scss/bootstrap.scss';
