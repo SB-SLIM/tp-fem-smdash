@@ -5,6 +5,7 @@ import MiniCards from "./components/MiniCards/MiniCards";
 import Switch from "./components/Toggle/Switch";
 
 import "./scss/style.scss";
+document.querySelector("body").setAttribute("class", "dark-schema");
 
 function App() {
   return (

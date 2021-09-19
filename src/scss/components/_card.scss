@@ -16,19 +16,14 @@
     p{
         margin: 0px;
     }
-    &:hover{
-        background-color: $card-bg-dark-hover;
-    }
-    &-color{
-        color: $text-color-dark;
-    }
    .letter-spacing {
         letter-spacing: 4px;
       }
     &-border-color{
         &-fb{border-color: $facebook !important;}
         //FIXME: linear gradient
-        &-insta{border: linear-gradient(to left, $instagram-from, $instagram-to) !important;}
+        &-insta{
+            border-image: linear-gradient(to left, $instagram-from, $instagram-to) 1 !important;}
         &-twit{border-color: $twitter !important;}
         &-youtube{border-color: $youTube !important;}
         

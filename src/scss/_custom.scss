@@ -12,40 +12,76 @@ $border-radius:               .8rem;
 
 
 
-@media (prefers-color-scheme: light) {
+
     
-    body{
-        background: $body-bg-light !important;
-        color:      $text-color-light !important;
-    }
-   .card{
-        background: $card-bg-light !important;
+    .light-schema {
+        background:         $body-bg-light !important;
+        color:              $text-color-light !important;
+        .card{
+            background:     $card-bg-light !important;
+        }
+        .card:hover{
+            background:     $card-bg-light-hover !important;
+        }
+        .switch-wrap {
+            background:     $toggle-bg-light !important;
+        }
    }
-   .card:hover{
-    background:     $card-bg-light-hover !important;
-   }
-   .switch-wrap {
-    background:     $toggle-bg-light;
-   }
-}
-@media (prefers-color-scheme: dark) {
-    body{
-    background:     $body-bg-dark !important;
-    color:          $body-color-dark !important;
-    }
-   .card{
-    background:     $card-bg-dark !important;
-   }
-   .card:hover{
-    background:     $card-bg-dark-hover !important;
-   }
-   .switch-wrap {
-    background:     linear-gradient(to right, $toggle-bg-from-dark, $toggle-bg-to-dark);
-   }
-}
 
 
-
-
+    .dark-schema{
+        background:         $body-bg-dark !important;
+        color:              $body-color-dark !important;
+                
+        .card{
+            background:     $card-bg-dark !important;
+        }
+        .card:hover{
+            background:     $card-bg-dark-hover !important;
+        }
+        .switch-wrap {
+            background:     linear-gradient(to right, $toggle-bg-from-dark, $toggle-bg-to-dark);
+        }
+   }
 
 @import  '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+
+
+// @media (prefers-color-scheme: light) {
+    
+//     body{
+//         background: $body-bg-light !important;
+//         color:      $text-color-light !important;
+//     }
+//    body{
+//         background: $body-bg-light !important;
+//         color:      $text-color-light !important;
+//     }
+//    .card{
+//         background: $card-bg-light !important;
+//    }
+//    .card:hover{
+//     background:     $card-bg-light-hover !important;
+//    }
+//    .switch-wrap {
+//     background:     $toggle-bg-light;
+//    }
+// }
+// @media (prefers-color-scheme: dark) {
+//     body{
+//     background:     $body-bg-dark !important;
+//     color:          $body-color-dark !important;
+//     }
+//    .card{
+//     background:     $card-bg-dark !important;
+//    }
+//    .card:hover{
+//     background:     $card-bg-dark-hover !important;
+//    }
+//    .switch-wrap {
+//     background:     linear-gradient(to right, $toggle-bg-from-dark, $toggle-bg-to-dark);
+//    }
+// }
