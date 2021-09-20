@@ -3,13 +3,33 @@
 
 
 
+.card-border{
+          
+    &-size {
+        border-radius: $border-radius ;
+        min-width: 160px;
+        width: 20%;
+        max-height: 200px;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+        border:0;
+    }
+
+    &-color-fb{background-color: $facebook !important;}
+    //FIXME: linear gradient
+    &-color-insta{
+        background: linear-gradient(to left, $instagram-from, $instagram-to) !important;}
+    &-color-twit{background-color: $twitter !important;}
+    &-color-youtube{background-color: $youTube !important;}
+    &-color-margin {margin-top: 3px;}
+}
+
+
 .card{
     border:0;
-    margin: 4px;
-    min-width: 160px;
-    width: 20%;
-    max-height: 200px;
-    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    
+    width: 100%;
+    height: 100%;
+    
     &-image{
         max-height: 20px;
     }
@@ -19,17 +39,9 @@
    .letter-spacing {
         letter-spacing: 4px;
       }
-    &-border-color{
-        &-fb{border-color: $facebook !important;}
-        //FIXME: linear gradient
-        &-insta{
-            border-image: linear-gradient(to left, $instagram-from, $instagram-to) 1 !important;}
-        &-twit{border-color: $twitter !important;}
-        &-youtube{border-color: $youTube !important;}
-        
-    }
-    &-border{
-        border-top: solid 4px;
-    }
+    
+    
     
 }
+
+
