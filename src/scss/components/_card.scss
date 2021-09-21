@@ -15,7 +15,6 @@
     }
 
     &-color-fb{background-color: $facebook !important;}
-    //FIXME: linear gradient
     &-color-insta{
         background: linear-gradient(to left, $instagram-from, $instagram-to) !important;}
     &-color-twit{background-color: $twitter !important;}
