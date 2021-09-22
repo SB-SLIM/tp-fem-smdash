@@ -1,1 +1,1 @@
-![Design preview for social media coding challenge](./src/assets/img-socilamedia.png)
+![Design preview for social media coding challenge](./static/media/img-socilamedia.png)
